@@ -1,0 +1,143 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+
+    --bg: #0B0A10;
+    --font-family: 'Inter', sans-serif;
+
+    --commun-size-text: 20px;
+    --title-size: 42px;
+
+    --fundo: #0D0B14;
+    --superficie-cards: #2c2438;
+    --roxo-principal: #7B2FF7;
+    --roxo-claro-destaque: #B983FF;
+    --texto-principal: #F3F0FA;
+    --texto-secundario: #A79DC0;
+    --ganhos-positivo: #35D499;
+    --gastos-negativo: #FF5E7A;
+}
+
+body {
+  background:
+    radial-gradient(circle at 15% 0%, #1C1730 0%, transparent 90%),
+    var(--bg);
+}
+
+h1 {
+    color: var(--texto-principal);
+
+    font-family: 'Fredoka', sans-serif;
+    font-size: 42px;
+    font-weight: 600;   
+}
+
+a, span {
+    color: #9791A8;
+    font-size: 15px;
+
+    font-family: var(--font-family);
+}
+
+p {
+    color: #9791A8;
+    font-family: var(--font-family);
+    font-size: 15px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+#overlay {
+    display: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    justify-content: center;
+    align-items: center;
+}
+
+#formulario {
+    background-color: var(--superficie-cards);
+    padding: 30px;
+    border-radius: 10px;
+
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#formulario h2 {
+    font-family: var(--font-family);
+    color: var(--texto-principal);
+}
+
+#nome, #gastos {
+    color: var(--texto-principal);
+    background-color: var(--superficie-cards);
+    border: var(--superficie-cards) solid;
+    border-bottom: white solid;
+
+    font-family: var(--font-family);
+    font-size: var(--commun-size-text);
+    
+}
+
+.input-renda {
+    color: var(--texto-principal);
+
+    font-family: var(--font-family);    
+    font-size: var(--commun-size-text);
+
+    background-color: var(--fundo);
+    border: var(--fundo) solid;
+    border-bottom: var(--superficie-cards) solid;
+}
+
+.input-gastos {
+    color: #7C5CFC;
+
+    font-family: var(--font-family);
+    font-size:  14px;
+    font-weight: 600;
+
+    background-color: rgba(124, 92, 252, 0.15);
+    border: rgba(124, 92, 252, 0.15);
+
+    padding: 9px 16px;
+    border-radius: 10px;
+}
+
+.button-calcular {
+    color: var(--texto-principal);
+
+    font-family: var(--font-family);
+    font-size:  var(--commun-size-text);
+
+    background-color: var(--roxo-principal);
+    border: var(--roxo-principal) solid;
+}
+
+
+.section-1 {
+    margin-bottom: 36px;
+}
