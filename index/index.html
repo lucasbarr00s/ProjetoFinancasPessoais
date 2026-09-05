@@ -17,32 +17,49 @@
 <body>
     <main>
         <div class="model">
-            <div class="model-part-1">
+
+            <div class="model-sec-1">
+
                 <div class="section-1">
                     <h1>Meu orçamento 💸</h1>
                     <p>Organize sua renda e seus gastos do mês.</p>
                 </div>
+
+
                 
-                <div class="renda">
+                <div class="section-2">
                     <a>Renda mensal<br> R$</a>
                     <input type="number" placeholder="0,00" id="input-renda" class="input-renda">
                 </div>
-                
+
+
+
+
                 <div class="gastos">
                     <a>Gastos</a>
                     <input type="button" value="+ Adicionar gastos" id="abrirFormulario" class="input-gastos">
                 </div>
 
+
+
+
                 <div id="overlay" class="formulario-gastos">
                     <div id="formulario">
-                        <h2>Adicionar gastos</h2>
+
+                        <div class="header-forms">
+                            <h2>Adicionar gastos</h2>
+                            <a id="fecharFormulario">x</a>
+                        </div>
                         
                         <div id="container"></div>
 
                         <button id="adicionarGastos">Adicionar</button>
-                        <button id="fecharFormulario">Salvar</button>
+                        <button id="salvarFormulario">Salvar</button>
                     </div>
                 </div>
+
+
+
             </div>
 
             <div class="model-part-2">

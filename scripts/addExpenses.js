@@ -25,17 +25,12 @@ addExp.addEventListener("click", () => {
     newInputGastos.style.fontSize = "20px";
     newInputGastos.style.color = "#F3F0FA";
 
-
     container.style.gap = "15px";
     container.style.display = "flex";
     container.style.flexDirection = "column";
 
-
     container.appendChild(newInputNome);
     container.appendChild(newInputGastos);
-
-    const elementos = container.children;
-    console.log(elementos)
 }) 
 
 

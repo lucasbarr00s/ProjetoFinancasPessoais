@@ -1,11 +1,16 @@
-const abrirOverlay = document.getElementById('abrirFormulario');
-const fecharOverlay = document.getElementById('fecharFormulario');
+const abrirForms = document.getElementById('abrirFormulario');
+const salvarDadosForms = document.getElementById('salvarFormulario');
+const fecharForms = document.getElementById('fecharFormulario');
 
-abrirOverlay.addEventListener("click", () => {
+abrirForms.addEventListener("click", () => {
     overlay.style.display = "flex";
 })
 
-fecharOverlay.addEventListener("click", () => {
+fecharForms.addEventListener("click", () => {
+    overlay.style.display = "none";
+})
+
+salvarDadosForms.addEventListener("click", () => {
     const elementos = container.children;
     const dict = {}
     overlay.style.display = "none";

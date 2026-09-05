@@ -4,9 +4,12 @@
 }
 
 :root {
-
+    --title-style: 'Fredoka', sans-serif;
     --bg: #0B0A10;
     --font-family: 'Inter', sans-serif;
+
+    --font-size: 42px;
+    --font-weight: 600;
 
     --commun-size-text: 20px;
     --title-size: 42px;
@@ -16,14 +19,16 @@
     --roxo-principal: #7B2FF7;
     --roxo-claro-destaque: #B983FF;
     --texto-principal: #F3F0FA;
-    --texto-secundario: #A79DC0;
+    --texto-secundario: #9791A8;
     --ganhos-positivo: #35D499;
     --gastos-negativo: #FF5E7A;
 }
 
+
+/* COOL BACKGROUND BODY */
 body {
   background:
-    radial-gradient(circle at 15% 0%, #1C1730 0%, transparent 90%),
+    radial-gradient(circle at 15% , #1C1730 0%, transparent 90%),
     var(--bg);
 }
 
@@ -31,28 +36,30 @@ h1 {
     color: var(--texto-principal);
 
     font-family: 'Fredoka', sans-serif;
-    font-size: 42px;
-    font-weight: 600;   
-}
-
-a, span {
-    color: #9791A8;
-    font-size: 15px;
-
-    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);   
 }
 
 p {
-    color: #9791A8;
+    color: var(--texto-secundario);
     font-family: var(--font-family);
     font-size: 15px;
 }
+
+a {
+    color: var(--texto-secundario);
+    font-size: 15px;
+
+    font-family: var(--font-family);
+}
+
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
 
 input:focus {
     outline: none;
@@ -87,33 +94,60 @@ input:focus {
 }
 
 #formulario h2 {
-    font-family: var(--font-family);
+    font-family: var(--title-style);
+    font-weight: 600;
     color: var(--texto-principal);
 }
 
-#nome, #gastos {
-    color: var(--texto-principal);
-    background-color: var(--superficie-cards);
-    border: var(--superficie-cards) solid;
-    border-bottom: white solid;
+#formulario .header-forms {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
 
-    font-family: var(--font-family);
-    font-size: var(--commun-size-text);
-    
+#fecharFormulario {
+    font-weight: var(--font-weight);
+    color: var(--texto-principal);
+}
+
+#fecharFormulario:hover {
+    color: var(--roxo-claro-destaque);
 }
 
 .input-renda {
     color: var(--texto-principal);
-
+    
     font-family: var(--font-family);    
     font-size: var(--commun-size-text);
 
-    background-color: var(--fundo);
-    border: var(--fundo) solid;
+    background-color: var(--fundo) 40%;
+
+    border: var(--fundo) 40% solid;
     border-bottom: var(--superficie-cards) solid;
+    border-bottom-width: 0.5px;
+}
+
+.input-renda:hover {
+    border-bottom: var(--roxo-claro-destaque) solid;
+    border-bottom-width: 0.5px;
 }
 
 .input-gastos {
+    color: #7C5CFC;
+
+    font-family: var(--font-family);
+    font-size:  14px;
+    font-weight: 600;
+
+    background-color: rgba(124, 92, 252, 0.15);
+    border: rgba(124, 92, 252, 0.15);
+
+    padding: 9px 16px;
+    border-radius: 10px;
+}
+
+#adicionarGastos, #salvarFormulario {
     color: #7C5CFC;
 
     font-family: var(--font-family);
@@ -132,11 +166,15 @@ input:focus {
 
     font-family: var(--font-family);
     font-size:  var(--commun-size-text);
+    font-weight: 600;
+
+    padding: 9px 16px;
 
     background-color: var(--roxo-principal);
     border: var(--roxo-principal) solid;
-}
+    border-radius: 10px;
 
+}
 
 .section-1 {
     margin-bottom: 36px;
